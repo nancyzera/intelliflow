@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-slate-900 text-slate-100;
+}
+
+.glass {
+  @apply rounded-xl border border-white/10 bg-glass-gradient backdrop-blur-lg;
+}
+
+.neon-border {
+  box-shadow: 0 0 12px rgba(0,229,255,0.35), 0 0 24px rgba(157,78,221,0.28);
+}
+
+.card {
+  @apply glass neon-border p-5;
+}
+
+.card-title {
+  @apply text-sm uppercase tracking-wider text-slate-300 mb-3;
+}
+
+.primary-btn {
+  @apply px-4 py-2 rounded-md bg-neon-blue/20 border border-neon-blue/40 hover:bg-neon-blue/30 transition;
+}
+
+.secondary-btn {
+  @apply px-4 py-2 rounded-md bg-neon-purple/20 border border-neon-purple/40 hover:bg-neon-purple/30 transition;
+}
+
+.input {
+  @apply px-3 py-2 rounded-md bg-white/5 border border-white/10 focus:outline-none focus:ring-2 focus:ring-neon-blue;
+}
+
+.textarea {
+  @apply w-full px-3 py-2 rounded-md bg-white/5 border border-white/10 focus:outline-none focus:ring-2 focus:ring-neon-purple;
+}
+
+
